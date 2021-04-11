@@ -5,15 +5,13 @@ import random
 
 # create Header
 def create_header(token):
-    user = user.lower()
-    url = 'https://lichess.org/team/asdadasd/kick/HaterCheaterHater'
-    header = {'Authorization': 'Bearer ' + token}
-    return header
+    return {'Authorization': 'Bearer ' + token}
+    
 
 # create request
 def create_request(header):
+    url = 'https://lichess.org/team/asdadasd/kick/HaterCheaterHater'
     return requests.post(url, headers=header)
-
 
 # Analyse Request
 def analyse(level):
@@ -33,7 +31,7 @@ def status(level):
         return "No Error" 
 
 # Create cheat Token
-def cheat_token(token_example):
+def cheat_tokens(token_example):
     cheat_token = ''
     chars = ''
     
@@ -45,13 +43,9 @@ def cheat_token(token_example):
 
     for uppercase in string.ascii_uppercase:
         chars = chars+uppercase
-    
-    try:
-        for i in range(0, len(token_example)):
-            cheat_token = cheat_token + chars[random.randint(0, len(chars)-1)]
-    except:
-        cheat_token = ''
-        quit()
+
+    for i in range(0, len(token_example)):
+        cheat_token = cheat_token + chars[random.randint(0, len(chars)-1)]
+ 
 
     return cheat_token
-
