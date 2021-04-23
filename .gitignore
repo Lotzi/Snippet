@@ -1,3 +1,6 @@
+# Rust Fails
+*.o
+
 # Exe
 *.exe
 .exe
