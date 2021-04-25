@@ -3,7 +3,7 @@
 Dieses Programm sucht durch Zufalls Werte Lichess API Tokens
 
 ## Example
-Hier ein einfaches Beispiel. Zu Sicherheitszwecken ist dieser Ungültig
+Hier ein einfaches Beispiel. Zu Sicherheitszwecken ist dieser ungültig
 
 ```python
 token_example = 'CB8YzDTrpSiqHV5l'
