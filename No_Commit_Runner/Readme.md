@@ -1,6 +1,6 @@
 # Löscht Kommentare aus Datein
 
-## Anwedung
+## Anwendung
 ```
 py.exe .\no_commit.py Datei_zum_Lesen Datei_zum_schreiben
 ```
