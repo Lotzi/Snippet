@@ -1,2 +1,3 @@
 # CodeSnippet
-Random Code
+
+Das ist eine Spielwiese für @Zeyecx.  

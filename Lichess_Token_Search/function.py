@@ -10,7 +10,7 @@ def create_header(token):
 
 # create request
 def create_request(header):
-    url = 'https://lichess.org/team/asdadasd/kick/HaterCheaterHater'
+    url = 'https://lichess.org/team/xxx/kick/xxx'
     return requests.post(url, headers=header)
 
 # Analyse Request
