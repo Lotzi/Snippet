@@ -90,6 +90,7 @@ valgrind_leakcheck: $(OUT)
 # run program with valgrind for leak checks (extreme)
 valgrind_extreme: $(OUT)
 	valgrind --leak-check=full --show-leak-kinds=all --leak-resolution=high --track-origins=yes --vgdb=yes $(OUT)
-``
+```
+
 Folgendes baut mir eine *.exe Datei. Allerdings verstehe ich es immer noch nicht, wie man damit Latex compilieren kann.
 Wer Ideen hat, kann gerne ein Issue oder Request machen. 
