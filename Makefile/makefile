@@ -1,10 +1,46 @@
-.DEFAULT_GOAL := default
+OBJS	= main.cpp
+SOURCE	= main.cpp
+HEADER	= 
+OUT	= Test
+CC	 = g++
+FLAGS	 = -g3 -c -Wall
+LFLAGS	 = 
+# -g option enables debugging mode 
+# -c flag generates object code for separate files
 
-test:
-	g++ main.cpp -std=c++17 -o Test.exe
 
-asd:
-	g++ main.cpp -std=c++17 -o asd.exe
+all: $(OBJS)
+	$(CC) -g $(OBJS) -o $(OUT) $(LFLAGS)
+	del *.o
 
-default: 
-	g++ main.cpp -std=c++17 -o ddd.exe
+Makefile: $(OBJS)
+	$(CC) -g $(OBJS) -o $(OUT)
+
+# create/compile the individual files >>separately<<
+main.o: main.cpp
+	$(CC) $(FLAGS) main.cpp --std=c++17
+
+
+# clean house
+clean:
+	rm -f $(OBJS) $(OUT)
+
+# run the program
+run: $(OUT)
+	./$(OUT)
+
+# compile program with debugging information
+debug: $(OUT)
+	valgrind $(OUT)
+
+# run program with valgrind for errors
+valgrind: $(OUT)
+	valgrind $(OUT)
+
+# run program with valgrind for leak checks
+valgrind_leakcheck: $(OUT)
+	valgrind --leak-check=full $(OUT)
+
+# run program with valgrind for leak checks (extreme)
+valgrind_extreme: $(OUT)
+	valgrind --leak-check=full --show-leak-kinds=all --leak-resolution=high --track-origins=yes --vgdb=yes $(OUT)
