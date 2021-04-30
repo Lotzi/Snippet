@@ -1,46 +1,7 @@
-# CodeSnippet
-Das ist eine Spielwiese für Zeyecx.
-
-## Lichess Token 
-
-Dieses Programm sucht durch Zufalls Werte Lichess API Tokens
-
-### Example
-Hier ein einfaches Beispiel. Zu Sicherheitszwecken ist dieser ungültig
-
-```python
-token_example = 'CB8YzDTrpSiqHV5l'
-```
-
-
-### Generierung
-Ich nutze einfach einen String mit allen möglichen Zeichen und bastel mir einen dummy String
-
-```python
-def cheat_tokens(token_example):
-    cheat_token = ''
-    chars = ''
-    
-    for numbers in range(0, 10):
-        chars = chars+str(numbers)
-
-    for lowercase in string.ascii_lowercase:
-        chars = chars+lowercase
-
-    for uppercase in string.ascii_uppercase:
-        chars = chars+uppercase
-
-    for i in range(0, len(token_example)):
-        cheat_token = cheat_token + chars[random.randint(0, len(chars)-1)]
-
-```
-
-Durch eine Dauerschleife werden diese dann getestet. 
-
-## MakeFile
+# MakeFile
 Ich nutze das eig nur um zu lernen wie MakeFiles funktionieren. 
 
-### Aktuelle Version
+## Aktuelle Version
 Aktuell nutze ich folgende Version.
 
 ```Makefile
@@ -94,3 +55,28 @@ valgrind_extreme: $(OUT)
 
 Folgendes baut mir eine *.exe Datei. Allerdings verstehe ich es immer noch nicht, wie man damit Latex compilieren kann.
 Wer Ideen hat, kann gerne ein Issue oder Request machen. 
+
+## Löscht Kommentare aus Datein
+
+### Anwendung
+``` PowerShell
+py.exe .\no_commit.py Datei_zum_Lesen Datei_zum_schreiben
+```
+Es ist notwendig, dass beide Datein existieren.
+
+### Beispiel an Datein im Ordner test
+
+```PowerShell
+py.exe .\no_commit.py .\test\test_commit.txt .\test\test_fertig.txt
+```
+
+### Output
+Das Skript gibt immer die gelöschten Zeilen zurück.
+
+```PowerShell
+Delete: # Hallo Welt
+```
+
+### Neues Dateiformat
+
+Neue Dateiformate können in der database.py nachgetragen werden.
