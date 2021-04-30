@@ -56,7 +56,7 @@ valgrind_extreme: $(OUT)
 Folgendes baut mir eine *.exe Datei. Allerdings verstehe ich es immer noch nicht, wie man damit Latex compilieren kann.
 Wer Ideen hat, kann gerne ein Issue oder Request machen. 
 
-## Löscht Kommentare aus Datein
+## No_Commit_Runner
 
 ### Anwendung
 ``` PowerShell
