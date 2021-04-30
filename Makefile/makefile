@@ -1,4 +1,4 @@
-OBJS	= main.o
+OBJS	= main.cpp
 SOURCE	= main.cpp
 HEADER	= 
 OUT	= Test
@@ -11,6 +11,7 @@ LFLAGS	 =
 
 all: $(OBJS)
 	$(CC) -g $(OBJS) -o $(OUT) $(LFLAGS)
+	del *.o
 
 Makefile: $(OBJS)
 	$(CC) -g $(OBJS) -o $(OUT)
