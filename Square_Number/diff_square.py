@@ -1,6 +1,32 @@
+import sys
+
+# Error Handling 
+error = False
+
+# Testing for control arguments
+try:
+    if len(sys.argv) == 3:
+        # Convert the arguments into numbers
+        start = int(sys.argv[1])
+        end = int(sys.argv[2])
+
+        # Test the numbers        
+        if start > end:
+            error = True
+            print("Start must be smaller than the end.")
+        
+except:
+    # If there are no control arguments, basic values are taken. 
+    start = 1
+    end = 1001
+
+# Error Exit
+if error:
+    print("Error")
+    quit()
 
 # List of all positive integers from 0 to n
-figure = range(1, 1000)
+figure = range(start, end)
 
 # List of all square numbers from the figures array.
 square = []
