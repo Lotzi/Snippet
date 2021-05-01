@@ -1,8 +1,8 @@
 # MakeFile
-Ich nutze das eig nur um zu lernen wie MakeFiles funktionieren. 
+I only use it to learn how MakeFiles work. 
 
-## Aktuelle Version
-Aktuell nutze ich folgende Version.
+## Latest version
+I currently use the following version.
 
 ```Makefile
 OBJS	= main.cpp
@@ -53,5 +53,5 @@ valgrind_extreme: $(OUT)
 	valgrind --leak-check=full --show-leak-kinds=all --leak-resolution=high --track-origins=yes --vgdb=yes $(OUT)
 ```
 
-Folgendes baut mir eine *.exe Datei. Allerdings verstehe ich es immer noch nicht, wie man damit Latex compilieren kann.
-Wer Ideen hat, kann gerne ein Issue oder Request machen. 
+The Makefile compiles a *.exe file for me. However, I still don't understand how to compile Latex with it.
+If you have any ideas, feel free to make an issue or request. 

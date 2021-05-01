@@ -1,5 +1,5 @@
 # PlayGround
-Hier wird einfach nur mit der Python GUI rumgespielt 
+Here we are just playing around with the Python GUI. 
 
 ```Python
 # Import and initialize the pygame library

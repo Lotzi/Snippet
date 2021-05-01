@@ -1,24 +1,24 @@
-# Löscht Kommentare aus Datein
+# Deletes comments from files
 
-## Anwendung
+## Application
 ``` PowerShell
 py.exe .\no_commit.py Datei_zum_Lesen Datei_zum_schreiben
 ```
 Es ist notwendig, dass beide Datein existieren.
 
-## Beispiel an Datein im Ordner test
+## Example of files in the test folder
 
 ```PowerShell
 py.exe .\no_commit.py .\test\test_commit.txt .\test\test_fertig.txt
 ```
 
 ## Output
-Das Skript gibt immer die gelöschten Zeilen zurück.
+The script always returns the deleted lines.
 
 ```PowerShell
 Delete: # Hallo Welt
 ```
 
-## Neues Dateiformat
+## New file format
 
-Neue Dateiformate können in der database.py nachgetragen werden.
+New file formats can be added in database.py.

@@ -1,3 +1,3 @@
 # Squere Number
 
-Berechnung der Differenz der Quadratzahlen.
+Calculation of the difference of the square numbers.

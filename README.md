@@ -1,17 +1,17 @@
 ## Lichess Token 
 
-Dieses Programm sucht durch Zufalls Werte Lichess API Tokens
+This program searches by random values Lichess API Tokens.
 
 ### Example
-Hier ein einfaches Beispiel. Zu Sicherheitszwecken ist dieser ungültig
+Here is a simple example. For security purposes, this is invalid.
 
 ```python
 token_example = 'CB8YzDTrpSiqHV5l'
 ```
 
 
-### Generierung
-Ich nutze einfach einen String mit allen möglichen Zeichen und bastel mir einen dummy String
+### Creating the Keys
+I simply use a string with all possible characters and create a substring from this set.
 
 ```python
 def cheat_tokens(token_example):
@@ -32,14 +32,14 @@ def cheat_tokens(token_example):
 
 ```
 
-Durch eine Dauerschleife werden diese dann getestet. 
+These are then tested through a continuous loop. 
 
 
 # MakeFile
-Ich nutze das eig nur um zu lernen wie MakeFiles funktionieren. 
+I only use it to learn how MakeFiles work. 
 
-## Aktuelle Version
-Aktuell nutze ich folgende Version.
+## Latest version
+I currently use the following version.
 
 ```Makefile
 OBJS	= main.cpp
@@ -90,12 +90,12 @@ valgrind_extreme: $(OUT)
 	valgrind --leak-check=full --show-leak-kinds=all --leak-resolution=high --track-origins=yes --vgdb=yes $(OUT)
 ```
 
-Folgendes baut mir eine *.exe Datei. Allerdings verstehe ich es immer noch nicht, wie man damit Latex compilieren kann.
-Wer Ideen hat, kann gerne ein Issue oder Request machen. 
+The Makefile compiles a *.exe file for me. However, I still don't understand how to compile Latex with it.
+If you have any ideas, feel free to make an issue or request. 
 
 ## No_Commit_Runner
 
-### Anwendung
+### Application
 ``` PowerShell
 py.exe .\no_commit.py Datei_zum_Lesen Datei_zum_schreiben
 ```
@@ -108,18 +108,18 @@ py.exe .\no_commit.py .\test\test_commit.txt .\test\test_fertig.txt
 ```
 
 ### Output
-Das Skript gibt immer die gelöschten Zeilen zurück.
+The script always returns the deleted lines.
 
 ```PowerShell
 Delete: # Hallo Welt
 ```
 
-### Neues Dateiformat
+### New file format
 
-Neue Dateiformate können in der database.py nachgetragen werden.
+New file formats can be added in database.py.
 
 # PlayGround
-Hier wird einfach nur mit der Python GUI rumgespielt 
+Here we are just playing around with the Python GUI. 
 
 ```Python
 # Import and initialize the pygame library
@@ -132,4 +132,4 @@ screen = pygame.display.set_mode([500, 500])
 
 # Squere Number
 
-Berechnung der Differenz der Quadratzahlen.
+Calculation of the difference of the square numbers.

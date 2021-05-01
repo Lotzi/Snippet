@@ -1,17 +1,17 @@
 # Lichess Token 
 
-Dieses Programm sucht durch Zufalls Werte Lichess API Tokens
+This program searches by random values Lichess API Tokens.
 
 ## Example
-Hier ein einfaches Beispiel. Zu Sicherheitszwecken ist dieser ungültig
+This program searches by random values Lichess API Tokens.
 
 ```python
 token_example = 'CB8YzDTrpSiqHV5l'
 ```
 
 
-## Generierung
-Ich nutze einfach einen String mit allen möglichen Zeichen und bastel mir einen dummy String
+## Creating the Keys
+I simply use a string with all possible characters and create a substring from this set.
 
 ```python
 def cheat_tokens(token_example):
@@ -32,4 +32,4 @@ def cheat_tokens(token_example):
 
 ```
 
-Durch eine Dauerschleife werden diese dann getestet. 
+These are then tested through a continuous loop. 
