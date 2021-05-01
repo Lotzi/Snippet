@@ -1,6 +1,6 @@
 
 # List of all positive integers from 0 to n
-figure = range(2, 101)
+figure = range(1, 1000)
 
 # List of all square numbers from the figures array.
 squere = []
@@ -10,7 +10,7 @@ for i in figure:
     squere.append(i**2)
 
 # Maths output for lazy people
-symbol = '²'
+symbol = '^2'
 
 for i in figure:
     # When the array is finished, the programme terminates.
@@ -28,8 +28,9 @@ for i in figure:
     tuple_squere = "(" + str(i**2) + "," + str((i - 1)**2) + ") :"
 
     # Generates the output for the console
-    diff = squere[i] - squere[i-1]
-    tuple_ausgabe = str(squere[i])+" - "+str(squere[i-1])
+    diff = squere[i-1] - squere[i-2]
+    tuple_ausgabe = str(squere[i-1])+" - "+str(squere[i-2])
 
     # Output
-    print(tuple_figure, tuple_squere, tuple_ausgabe, " = ", diff)
+    if diff > 0:
+        print(tuple_figure, tuple_squere, tuple_ausgabe, " = ", diff)
