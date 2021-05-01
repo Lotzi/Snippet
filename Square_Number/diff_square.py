@@ -20,9 +20,6 @@ for i in figure:
     except:
         quit()
 
-    # Template for the output
-    calc = squere[i]-squere[i-1]
-
     # The tuple consists of the entered numbers.
     tuple_figure = "(" + str(i) + "," + str(i - 1) + ")"+symbol+" -->"
     tuple_squere = "(" + str(i**2) + "," + str((i - 1)**2) + ") :"
