@@ -38,8 +38,6 @@ These are then tested through a continuous loop.
 # MakeFile
 I only use it to learn how MakeFiles work. 
 
-## Latest version
-I currently use the following version.
 
 ```Makefile
 OBJS	= main.cpp
