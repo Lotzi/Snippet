@@ -29,7 +29,7 @@ And so on.
 
 ### Python
 ```Python
-for i in figure:
+for i in range(0,101):
     
     # The tuple consists of the entered numbers.
     tuple_figure = "(" + str(i) + "," + str(i - 1) + ")"+symbol+" -->"
