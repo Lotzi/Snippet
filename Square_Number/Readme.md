@@ -37,6 +37,13 @@ Example:
 python diff_square.py 1 3
 ```
 
+If no configuration is made by the user, the following start values are used. 
+
+```Log
+    start = 1
+    end = 1001
+```
+So a configuration is mandatory.
 
 ## Python
 ```Python
