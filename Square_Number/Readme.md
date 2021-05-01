@@ -29,12 +29,12 @@ And so on.
 ## Usage
 
 ```PowerShell
-py.exe diff_square.py <<START_VALUE>> <<END_VALUE>>
+python diff_square.py <<START_VALUE>> <<END_VALUE>>
 ```
 
 Example:
 ```PowerShell
-py.exe diff_square.py 1 3
+python diff_square.py 1 3
 ```
 
 
