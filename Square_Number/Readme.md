@@ -1,4 +1,4 @@
-# square Number
+# Square Number
 Calculation of the difference of the square numbers.
 
 ## Basic idea
