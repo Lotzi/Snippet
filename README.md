@@ -1,3 +1,4 @@
+# CodeSnippet
 ## Lichess Token 
 
 This program searches by random values Lichess API Tokens.
@@ -103,6 +104,34 @@ pygame.init()
 screen = pygame.display.set_mode([500, 500])
 ```
 
-# Squere Number
+## Square Number
 
 Calculation of the difference of the square numbers.
+
+### Basic idea
+If you look at the difference between 2 consecutive square numbers, you notice that they only increase by 2. 
+This script was created to show this. 
+
+### Example
+```Log
+(2,1)^2 --> (4,1) : 4 - 1  =  3
+(3,2)^2 --> (9,4) : 9 - 4  =  5
+(4,3)^2 --> (16,9) : 16 - 9  =  7
+``` 
+In the log you can imagine it better.
+
+### Python
+```Python 
+for i in range(0,101):
+    square.append(i**2)
+```
+and
+```Python
+    # The tuple consists of the entered numbers.
+    tuple_figure = "(" + str(i) + "," + str(i - 1) + ")"+symbol+" -->"
+    tuple_square = "(" + str(i**2) + "," + str((i - 1)**2) + ") :"
+
+    # Generates the output for the console
+    diff = square[i-1] - square[i-2]
+    tuple_ausgabe = str(square[i-1])+" - "+str(square[i-2])
+```
