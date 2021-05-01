@@ -92,7 +92,7 @@ Delete: # Hallo Welt
 
 New file formats can be added in database.py.
 
-# PlayGround
+## PlayGround
 Here we are just playing around with the Python GUI. 
 
 ```Python
