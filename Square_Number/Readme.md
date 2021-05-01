@@ -26,8 +26,19 @@ In the log you can imagine it better.
 ```
 And so on. 
 
+## Usage
 
-### Python
+```PowerShell
+py.exe diff_square.py <<START_VALUE>> <<END_VALUE>>
+```
+
+Example:
+```PowerShell
+py.exe diff_square.py 1 3
+```
+
+
+## Python
 ```Python
 for i in range(0,101):
     
