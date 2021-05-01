@@ -4,7 +4,7 @@
 ``` PowerShell
 py.exe .\no_commit.py Datei_zum_Lesen Datei_zum_schreiben
 ```
-Es ist notwendig, dass beide Datein existieren.
+It is necessary that both files exist.
 
 ## Example of files in the test folder
 

@@ -99,9 +99,9 @@ If you have any ideas, feel free to make an issue or request.
 ``` PowerShell
 py.exe .\no_commit.py Datei_zum_Lesen Datei_zum_schreiben
 ```
-Es ist notwendig, dass beide Datein existieren.
+It is necessary that both files exist.
 
-### Beispiel an Datein im Ordner test
+### Example of files in the test folder
 
 ```PowerShell
 py.exe .\no_commit.py .\test\test_commit.txt .\test\test_fertig.txt
