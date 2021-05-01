@@ -125,13 +125,13 @@ In the log you can imagine it better.
 for i in range(0,101):
     square.append(i**2)
 ```
-and
-```Python
-    # The tuple consists of the entered numbers.
-    tuple_figure = "(" + str(i) + "," + str(i - 1) + ")"+symbol+" -->"
-    tuple_square = "(" + str(i**2) + "," + str((i - 1)**2) + ") :"
 
-    # Generates the output for the console
-    diff = square[i-1] - square[i-2]
-    tuple_ausgabe = str(square[i-1])+" - "+str(square[i-2])
+### Usage
+```PowerShell
+py.exe diff_square.py <<START_VALUE>> <<END_VALUE>>
+```
+
+Example:
+```PowerShell
+py.exe diff_square.py 1 3
 ```
