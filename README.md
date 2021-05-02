@@ -41,16 +41,10 @@ I only use it to learn how MakeFiles work.
 
 
 ```Makefile
-OBJS	= main.cpp
-SOURCE	= main.cpp
-HEADER	= 
+SOURCE	= main.cpp 
 OUT	= Test
 CC	 = g++
 FLAGS	 = -g3 -c -Wall
-LFLAGS	 = 
-# -g option enables debugging mode 
-# -c flag generates object code for separate files
-
 
 all: $(OBJS)
 	$(CC) -g $(OBJS) -o $(OUT) $(LFLAGS)
@@ -59,7 +53,6 @@ all: $(OBJS)
 Makefile: $(OBJS)
 	$(CC) -g $(OBJS) -o $(OUT)
 
-# create/compile the individual files >>separately<<
 main.o: main.cpp
 	$(CC) $(FLAGS) main.cpp --std=c++17
 ```
@@ -71,7 +64,7 @@ If you have any ideas, feel free to make an issue or request.
 
 ### Application
 ``` PowerShell
-py.exe .\no_commit.py Datei_zum_Lesen Datei_zum_schreiben
+py.exe .\no_commit.py <<Datei_zum_Lesen>> <<Datei_zum_schreiben>>
 ```
 It is necessary that both files exist.
 
