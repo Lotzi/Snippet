@@ -17,6 +17,7 @@ This script was created to show this.
 (9,8)^2 --> (81,64) : 81 - 64  =  17
 (10,9)^2 --> (100,81) : 100 - 81  =  19
 ```
+A complete list up to 1000 can be found here: ![Example up to 1000](square_example.txt)
 
 In the log you can imagine it better.
 
@@ -61,3 +62,4 @@ for i in range(0,101):
     if diff > 0:
         print(tuple_figure, tuple_square, tuple_ausgabe, " = ", diff)
 ```
+Source Code ![diff_square.py](diff_square.py)
