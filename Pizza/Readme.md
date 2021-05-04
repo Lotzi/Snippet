@@ -21,8 +21,8 @@ create_customer(first_name, name, EMail, Number)
 ```
 
 ## Example
-In the test file you can view a complete order once. 
-[TestOrder.py](test.py)
+In the test file you can view a complete order once. Look here: [TestOrder.py](test.py).
+But unfortunately, it is already clear that it will not work. 
 
 
 ## PIP Dependencies
