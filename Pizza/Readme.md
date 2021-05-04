@@ -54,51 +54,55 @@ In order to add items to your order, you'll need the items' product codes.
 To find the codes, get the menu from the store, then search for items you want to add.
 You can do this by asking your ``Store`` object for its ``Menu``.
 
-``` Python
+```Python
 
     menu = my_local_dominos.get_menu()
 ```
 
 Then search ``menu`` with ``menu.search``. For example, running this command:
 
-.. code-block:: python
+```Python
 
     menu.search(Name='Coke')
+```
 
 Should print this to the console:
 
-.. code-block:: text
+```Python
 
     20BCOKE    20oz Bottle Coke®        $1.89
     20BDCOKE   20oz Bottle Diet Coke®   $1.89
     D20BZRO    20oz Bottle Coke Zero™   $1.89
     2LDCOKE    2-Liter Diet Coke®       $2.99
     2LCOKE     2-Liter Coke®            $2.99
-
+```
 After you've found your items' product codes, you can create an ``Order`` object add add your items:
 
-.. code-block:: python
+```Python
 
     order = Order.begin_customer_order(customer, my_local_dominos)
     order.add_item('P12IPAZA') # add a 12-inch pan pizza
     order.add_item('MARINARA') # with an extra marinara cup
     order.add_item('20BCOKE')  # and a 20oz bottle of coke
-
+```
 You can remove items as well!
 
-.. code-block:: python
+```Python
 
     order.remove_item('20BCOKE')
+```
 
 Wrap your credit card information in a ``CreditCard``:
 
-.. code-block:: python
+```Python
 
     card = CreditCard('4100123422343234', '0115', '777', '90210')
+``` 
 
 And that's it! Now you can place your order.
 
-.. code-block:: python
+```Python
 
     order.place(card)
     my_local_dominos.place_order(order, card)
+```
