@@ -32,7 +32,7 @@ main.o: main.cpp
 	$(CC) $(FLAGS) main.cpp --std=c++17
 ``` 
 
-[Read more](MakeFile)
+[Read more](/MakeFile)
 
 ## No_Commit_Runner
 
@@ -65,6 +65,18 @@ pygame.init()
 ```
 
 [Read more](PlayGround)
+
+## Prime Number
+
+### Syntax
+```Python
+for i in range(1, 10000):
+    if isprime(i) and isprime(i+2):
+        prime_figures.append((i, i+2))
+```
+The function determines all prime twins and outputs them. However, the function is also to be extended.  
+
+[Read more](/Prime_number)
 
 ## Square Number
 Calculation of the difference of the square numbers.
