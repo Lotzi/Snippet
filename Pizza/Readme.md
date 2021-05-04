@@ -39,23 +39,25 @@ pip install -r requirements.txt
 ## Syntax
 First construct a ``Customer`` object and set the customer's address:
 
-.. code-block:: python
+```python
 
     customer = Customer('Barack', 'Obama', 'barack@whitehouse.gov', '2024561111', '700 Pennsylvania Avenue NW, Washington, DC, 20408')
-
+```
 Then, find a store that will deliver to the address.
 
-.. code-block:: python
+```python
 
     my_local_dominos = StoreLocator.find_closest_store_to_customer(customer)
+```
 
 In order to add items to your order, you'll need the items' product codes.
 To find the codes, get the menu from the store, then search for items you want to add.
 You can do this by asking your ``Store`` object for its ``Menu``.
 
-.. code-block:: python
+``` Python
 
     menu = my_local_dominos.get_menu()
+```
 
 Then search ``menu`` with ``menu.search``. For example, running this command:
 
