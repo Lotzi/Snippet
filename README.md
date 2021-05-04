@@ -6,7 +6,7 @@ This program searches by random values Lichess API Tokens.
 ```python
 token_example = 'CB8YzDTrpSiqHV5l'
 ```
-[Read more:](Lichess_Token/Readme.md)
+[Read more](Lichess_Token)
 
 ###  Generating Keys
 I simply use a string with all possible characters and create a substring from this set.
@@ -32,7 +32,7 @@ main.o: main.cpp
 	$(CC) $(FLAGS) main.cpp --std=c++17
 ``` 
 
-[Read more:](MakeFile/Readme.md)
+[Read more](MakeFile)
 
 ## No_Commit_Runner
 
@@ -53,7 +53,7 @@ def create_address(adr, city, state, plz):
 ### RIP
 Unfortunately, it seems that the API has been closed. This means that it can no longer be used. I deeply regret this. 
 
-[Read more](Pizza/Readme.md)
+[Read more](Pizza)
 
 ## PlayGround
 Here we are just playing around with the Python GUI. 
@@ -64,7 +64,7 @@ import pygame
 pygame.init()
 ```
 
-[Read more](PlayGround/Readme.md)
+[Read more](PlayGround)
 
 ## Square Number
 Calculation of the difference of the square numbers.
@@ -75,4 +75,4 @@ Calculation of the difference of the square numbers.
 (3,2)^2 --> (9,4) : 9 - 4  =  5
 (4,3)^2 --> (16,9) : 16 - 9  =  7
 ```
-[Read more](Square_Number/Readme.md)
+[Read more](Square_Number)
