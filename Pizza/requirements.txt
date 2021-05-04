@@ -1,2 +1,4 @@
 pizzapi
 requests
+urllib3
+urllib2
