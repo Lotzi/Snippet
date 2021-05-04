@@ -1,12 +1,9 @@
-def check_is_prime(a):
-    x = True
-    for i in (2, a):
-        while x:
-            if a % i == 0:
-                x = False
-            else:
-                x = True
-    if x:
+def check_is_prime(n):
+    if n == 2 or n == 3:
         return True
-    else:
+    if n % 2 == 0 or n < 2:
         return False
+    for i in range(3, int(n**0.5)+1, 2):   # only odd numbers
+        if n % i == 0:
+            return False
+    return True
