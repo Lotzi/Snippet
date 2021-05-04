@@ -20,6 +20,11 @@ create_address(adr, city, state, plz)
 create_customer(first_name, name, EMail, Number)
 ```
 
+## Example
+In the test file you can view a complete order once. 
+[TestOrder.py](test.py)
+
+
 ## PIP Dependencies
 Please install the PIP dependencies.
 
