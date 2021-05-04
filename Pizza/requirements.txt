@@ -1,4 +1,7 @@
 pizzapi
 requests
 urllib3
-urllib2
+pyhamcrest
+xmltodict
+pytest
+mock
