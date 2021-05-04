@@ -1,11 +1,20 @@
 # Imports
 from function import check_is_prime as isprime
+import sys
+
+# set max
+cap = sys.maxsize
+
+# argv 
+    if len(sys.argv) == 1:
+        if type(int(sys.argv[1])) is int
+            cap = int(sys.argv[1])
 
 # List of prime numbers
 prime_figures = []
 
 # List of Prime Tuples
-for i in range(1, 10000):
+for i in range(1, cap):
     if isprime(i) and isprime(i+2):
         prime_figures.append((i, i+2))
 
