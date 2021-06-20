@@ -5,4 +5,5 @@ disable=
     E0401, # import-error
     R1723, # no-else-break
     W0105, # pointless string
+    F0001, # No Module
     
