@@ -1,4 +1,19 @@
 # CodeSnippet
+## GitCloner
+The programme is a git administration programme. It clones all public repos from a specific user. 
+
+```python
+g = Github()
+username = g.get_user(user)
+repos = []
+size = len("Repositoryfull_name") + 4 + len(user)
+for repo in username.get_repos():
+    repos.append(str(repo)[size:-2:])
+for runner in repos:
+    module = f"https://github.com/{user}/{runner}.git"
+    Repo.clone_from(module, os.getcwd() + sub + runner)
+```
+
 ## Lichess Token 
 
 This program searches by random values Lichess API Tokens.
@@ -6,7 +21,7 @@ This program searches by random values Lichess API Tokens.
 ```python
 token_example = 'CB8YzDTrpSiqHV5l'
 ```
-[Read more](Lichess_Token)
+[Read more](/Lichess_Token)
 
 ###  Generating Keys
 I simply use a string with all possible characters and create a substring from this set.
@@ -53,7 +68,7 @@ def create_address(adr, city, state, plz):
 ### RIP
 Unfortunately, it seems that the API has been closed. This means that it can no longer be used. I deeply regret this. 
 
-[Read more](Pizza)
+[Read more](/Pizza)
 
 ## PlayGround
 Here we are just playing around with the Python GUI. 
@@ -64,7 +79,7 @@ import pygame
 pygame.init()
 ```
 
-[Read more](PlayGround)
+[Read more](/PlayGround)
 
 ## Prime Number
 
@@ -87,4 +102,4 @@ Calculation of the difference of the square numbers.
 (3,2)^2 --> (9,4) : 9 - 4  =  5
 (4,3)^2 --> (16,9) : 16 - 9  =  7
 ```
-[Read more](Square_Number)
+[Read more](/Square_Number)
