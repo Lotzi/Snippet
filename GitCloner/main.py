@@ -2,17 +2,15 @@
 import os
 import shutil
 from platform import uname
-# from git import Repo
-import base64
 from github import Github
-from pprint import pprint
+from git import Repo
 
 # Git Settings
 user = "jplight"
 base = "git"
 
 # Path to git Basedir
-windoof = "C:\\dummy\\"
+windoof = "C:\\dummy"
 wsl = "/mnt/c/"
 linux = "/"
 
@@ -46,8 +44,15 @@ if path[:-1:] == "/":
 # Create Folder
 os.chdir(path)
 if os.path.isdir(base):
-    shutil.rmtree(os.getcwd() + sub + base)
-os.mkdir(base)
+    try:
+        shutil.rmtree(os.getcwd() + sub + base)
+        os.mkdir(base)
+    except Exception as e:
+        print(e)
+        print("Folder could not be deleted")
+if not os.path.isdir(base):
+    os.mkdir(base)
+
 os.chdir(path + sub + base)
 
 # Create Repo List
@@ -57,8 +62,8 @@ repos = []
 size = len("Repositoryfull_name") + 4 + len(user)
 for repo in username.get_repos():
     repos.append(str(repo)[size:-2:])
-for runner in repos:
-    print(runner)
 
 # Git Module with Python
-# Repo.clone_from("https://github.com/Zeyecx/faultybot.git", os.getcwd()+sub+"faultybot")
+for runner in repos:
+    module = f"https://github.com/{user}/{runner}.git"
+    Repo.clone_from(module, os.getcwd() + sub + runner)
