@@ -13,6 +13,7 @@ for runner in repos:
     module = f"https://github.com/{user}/{runner}.git"
     Repo.clone_from(module, os.getcwd() + sub + runner)
 ```
+[Read more](/GitCloner)
 
 ## Lichess Token 
 
