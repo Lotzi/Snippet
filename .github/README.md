@@ -15,6 +15,13 @@ for runner in repos:
 ```
 [Read more](/GitCloner)
 
+## Letter
+This is a simple template for latex letters. 
+You can use this template again and again.
+- Download Artifacts: [Download PDF](https://github.com/Zeyecx/CodeSnippet/actions/workflows/letter.yml)
+
+[Read more](/Letter)
+
 ## Lichess Token 
 
 This program searches by random values Lichess API Tokens.
