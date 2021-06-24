@@ -1,5 +1,4 @@
 import requests
-import lichess.api
 import string
 import random
 
@@ -44,7 +43,7 @@ def cheat_tokens(token_example):
     for uppercase in string.ascii_uppercase:
         chars = chars+uppercase
 
-    for i in range(0, len(token_example)):
+    for runner in range(0, len(token_example)):
         cheat_token = cheat_token + chars[random.randint(0, len(chars)-1)]
  
 
