@@ -6,7 +6,7 @@ from github import Github
 from git import Repo
 
 # Git Settings
-user = "Fennvel"
+user = "Fevecx"
 base = "git"
 
 # Path to git Basedir
