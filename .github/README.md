@@ -18,7 +18,7 @@ for runner in repos:
 ## Letter
 This is a simple template for latex letters. 
 You can use this template again and again.
-- Download Artifacts: [Download PDF](https://github.com/Fevecx/CodeSnippet/actions/workflows/letter.yml)
+- Download Artifacts: [Download PDF](https://github.com/Riffecx/CodeSnippet/actions/workflows/letter.yml)
 
 [Read more](/Letter)
 

@@ -1,7 +1,7 @@
 # Latex template for an official letter.
 
 
-- Artifacts: [Download PDF](https://github.com/Fevecx/CodeSnippet/actions/workflows/latex.yml)
+- Artifacts: [Download PDF](https://github.com/Riffecx/CodeSnippet/actions/workflows/latex.yml)
 
 
 ## Syntax
