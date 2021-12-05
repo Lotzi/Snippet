@@ -1,7 +1,0 @@
-pizzapi
-requests
-urllib3
-pyhamcrest
-xmltodict
-pytest
-mock
