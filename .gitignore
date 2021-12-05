@@ -6,7 +6,9 @@
 
 
 # Test
-test/
+/test/
+\test\
+*.test
 
 # Rust Fails
 *.o

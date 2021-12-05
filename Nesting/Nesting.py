@@ -40,4 +40,4 @@ print("Nesting Regular expression")
 print("expression: ", test)
 print("Maximum: ", maximum)
 print("Minimum: ", minimum)
-print("tiefster Punkt: \n Zeichen:", test[sig-1],"\n Position:",str(sig-1))
+
