@@ -61,10 +61,8 @@ for i in range(len(data)):
             print("Game: ", i, " true")
             flag = False
 
-if not flag:
-    print("No games found")
 
-# remember C++
+# Exit
 print("--- %s seconds ---" % (time.time() - start_time))
 print("END")
 sys.exit(0)
