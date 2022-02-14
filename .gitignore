@@ -1,6 +1,3 @@
-# Delete all Test Files 
-*.txt
-
 # Allow requirements
 !requirements.txt
 
