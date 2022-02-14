@@ -43,7 +43,7 @@ for i in range(len(data)):
                 pos_pre = pgn.find(ep[2]+"5")
                 if pos_pgn - pos_pre <= 10:
                     # UI White
-                    print("white: ", "Game =", i, ", token =", data[i], ", Diff =",pos_pgn - pos_pre)
+                    print("Game:"+str(i)+",status:true,color:white,token:"+str(data[i])+",Diff:"+str(pos_pgn - pos_pre))
                     flag = True
             for ep in ep_black:
                 # Pre Test Black
@@ -53,12 +53,11 @@ for i in range(len(data)):
                     print(pos_pgn,pos_pre)
                     if pos_pgn - pos_pre <= 10:
                         # UI Black
-                        print("black: ", "Game =", i, ", token =", data[i], ", Diff =",pos_pgn - pos_pre)
+                        print("Game:"+str(i)+",status:true,color:black,token:"+str(data[i])+",Diff:"+str(pos_pgn - pos_pre))
                         flag = True
         if not flag:
-            print("Game: ", i, " false")
+            print("Game:"+str(i)+",status:false")
         else:
-            print("Game: ", i, " true")
             flag = False
 
 
